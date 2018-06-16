@@ -1,18 +1,16 @@
 fileFormatVersion: 2
-guid: b52e5b7b24c9b974992581455991a075
-timeCreated: 1528482820
+guid: 48d8f60e1a4770f42b31239ccc203379
+timeCreated: 1529169936
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: polySurface10
-    100002: //RootNode
-    400000: polySurface10
-    400002: //RootNode
-    2100000: RocotoTextura
-    2300000: polySurface10
-    3300000: polySurface10
-    4300000: polySurface10
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Runa_Textura
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pPlatonic6
     9500000: //RootNode
   externalObjects: {}
   materials:
