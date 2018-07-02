@@ -11,3 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/4 - Scenes/TestLevel.unity
     guid: 059a7b39ccb4c834bb53e84e66be97e4
+  - enabled: 1
+    path: Assets/MiniGames/Game1.unity
+    guid: 447f8873f854e734497853e12138866d
+  - enabled: 1
+    path: Assets/MiniGames/Game2.unity
+    guid: 6f24f875a5f4cd245a06fc68acdb9df1
+  - enabled: 1
+    path: Assets/MiniGames/Game3.unity
+    guid: 02319e6edadefb348b191d29c0730971
