@@ -398,6 +398,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 896827284}
+  - component: {fileID: 896827281}
   m_Layer: 0
   m_Name: ThirdGameController
   m_TagString: Untagged
@@ -405,6 +406,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &896827281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896827280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb34dd3d570cf0b41ba2fbbc23e7c7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnGo:
+  - {fileID: 1481419178591042, guid: c2ab829e878840d48a042980d326267f, type: 2}
+  - {fileID: 1766439354278184, guid: b81a05050d4709c4da151ffd048fa74b, type: 2}
+  - {fileID: 1455999078347616, guid: d26cf9391bfa29e40a3c71704baa032e, type: 2}
+  randomNumber: 10
+  randomPosition: 0
+  firstNumber: 0
+  secondNumber: 0
+  timer: 70
+  timeWon: 0
+  textTime: {fileID: 1153194504}
+  ThirdWin: 0
 --- !u!4 &896827284
 Transform:
   m_ObjectHideFlags: 0

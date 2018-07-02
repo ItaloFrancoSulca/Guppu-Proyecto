@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 120323310350626634}
   - component: {fileID: 50301590405991458}
   - component: {fileID: 68567433182459424}
+  - component: {fileID: 114371325260650522}
   m_Layer: 0
   m_Name: Line
   m_TagString: Untagged
@@ -79,6 +80,20 @@ EdgeCollider2D:
   m_Points:
   - {x: 4.313985, y: 6.5776243}
   - {x: 5.4139853, y: 6.5776243}
+--- !u!114 &114371325260650522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1540189459641822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d97aae3694da34a84983225bf97684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRenderer: {fileID: 120323310350626634}
+  edgCollider: {fileID: 68567433182459424}
+  collidedWith: 0
 --- !u!120 &120323310350626634
 LineRenderer:
   m_ObjectHideFlags: 1

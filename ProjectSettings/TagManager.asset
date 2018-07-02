@@ -8,6 +8,11 @@ TagManager:
   - Enemy
   - Nether
   - Rune
+  - PiggyMG
+  - KeyMG
+  - GuppuMG
+  - points
+  - MiniGame Controller
   layers:
   - Default
   - TransparentFX
