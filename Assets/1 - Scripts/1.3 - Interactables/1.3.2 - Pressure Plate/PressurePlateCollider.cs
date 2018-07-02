@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PressurePlateCollider : MonoBehaviour {
 
-    public bool isPressed;
+    static public bool isPressed;
 
 	// Use this for initialization
 	void Start () {
-		
+		isPressed = false;
 	}
 	
 	// Update is called once per frame
@@ -16,7 +16,7 @@ public class PressurePlateCollider : MonoBehaviour {
 		
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerStay(Collider collision)
     {
         if ((collision.gameObject.tag == "Player")|| (collision.gameObject.tag == "Box"))
         {
@@ -24,7 +24,7 @@ public class PressurePlateCollider : MonoBehaviour {
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
         if ((collision.gameObject.tag == "Player") || (collision.gameObject.tag == "Box"))
         {

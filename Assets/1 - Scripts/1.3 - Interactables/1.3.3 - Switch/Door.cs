@@ -3,31 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : MonoBehaviour {
+    
 
-    public bool doorOpen = false;
-    BoxCollider _boxCollider;
-    MeshRenderer _meshRenderer;
+    public Transform openTransform;
+    public Transform closeTransform;
+    public GameObject particlesDoor;
 
 	// Use this for initialization
 	void Start () {
-        _boxCollider = GetComponent<BoxCollider>();
-        _meshRenderer = GetComponent<MeshRenderer>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (doorOpen)
+        if (PressurePlateCollider.isPressed)
         {
-            _boxCollider.enabled = true;
-            _meshRenderer.enabled = true;
+            transform.position = Vector3.MoveTowards(transform.position, closeTransform.position, 8*Time.deltaTime);
         }
         else
         {
-            _boxCollider.enabled = false;
-            _meshRenderer.enabled = false;
+            transform.position = Vector3.MoveTowards(transform.position, openTransform.position, 8 * Time.deltaTime);
         }
-		
+
+		if (transform.position.y != openTransform.position.y && transform.position.y != closeTransform.position.y) {
+            particlesDoor.SetActive(true);
+        }
+        else
+        {
+            particlesDoor.SetActive(false);
+        }
 	}
     
 }
