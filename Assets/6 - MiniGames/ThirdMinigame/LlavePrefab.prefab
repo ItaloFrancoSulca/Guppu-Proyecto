@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212264873662899558}
   - component: {fileID: 50947415991882652}
   - component: {fileID: 58805534640540370}
+  - component: {fileID: 114402921437518474}
   m_Layer: 0
   m_Name: LlavePrefab
   m_TagString: KeyMG
@@ -77,6 +78,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.77
+--- !u!114 &114402921437518474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481419178591042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a5d7f4d190df746a0dbaae7b129844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212264873662899558
 SpriteRenderer:
   m_ObjectHideFlags: 1

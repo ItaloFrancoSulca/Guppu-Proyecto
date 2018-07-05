@@ -121,6 +121,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 200248912}
+  - component: {fileID: 200248914}
+  - component: {fileID: 200248913}
+  - component: {fileID: 200248911}
   m_Layer: 0
   m_Name: Minigame2 Controller
   m_TagString: MiniGame Controller
@@ -128,6 +131,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &200248911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 200248910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a44abdee360df5142a2cc4deb0287406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &200248912
 Transform:
   m_ObjectHideFlags: 0
@@ -141,6 +155,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &200248913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 200248910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c0bb0b6e3bc2c541b3219d6a270c370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linePrefab: {fileID: 1540189459641822, guid: caa0fa97131c2cf4298403252d75e63c, type: 2}
+  activeLine: {fileID: 0}
+  lineInScene: {fileID: 0}
+  guppuFace: {fileID: 1012584000}
+  timer: 120
+  timeWon: 0
+  textTime: {fileID: 1258302066}
+  WinSecond: 0
+  mouseBeenUp: 0
+  _lineRenderer: {fileID: 0}
+--- !u!114 &200248914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 200248910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd96c4aed52a1e4449a93203c262bb72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &224288538
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,4 +20,6 @@ public class SecondModel : MonoBehaviour {
     public bool WinSecond = false;
     public bool mouseBeenUp = false;
 
+    public LineRenderer _lineRenderer;
+
 }
