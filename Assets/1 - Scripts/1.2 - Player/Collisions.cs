@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Collisions : MonoBehaviour {
-
-    public bool dead;
+    
     public GameObject soundEffectController;
     SoundEffect_Vista soundEffect_Vista;
 	// Use this for initialization
@@ -13,18 +13,13 @@ public class Collisions : MonoBehaviour {
 		soundEffect_Vista = soundEffectController.GetComponent<SoundEffect_Vista>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Time.timeScale = 0;
-            dead = true;
-            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
             int playLoseSound = Random.Range(1,3);
 
             switch(playLoseSound){
